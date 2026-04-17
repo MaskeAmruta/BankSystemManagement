@@ -1,0 +1,88 @@
+/*-------------Animation ---------------*/
+
+.move-heading{
+	margin-top:55px;
+	display:inline-block;
+	will-change: transform;
+	animation: move-heading 20s linear infinite;
+}
+
+@keyframes move-heading{
+	0% {transform : translateX(-100%); }
+	100% { transform : translateX(100vw); }
+}
+
+
+/*-------- hero section ---------image slider------------------*/
+
+.slider{
+	width:600px;
+	margin:auto;
+	text-align:center;
+}
+.slides{
+	position:relative;
+	overflow:hidden;
+	border-radius:10px;
+}
+.slides img{
+	width:100%;
+	height:300px;
+	display:none;
+}
+.slides img.active{
+	display:block;
+}
+
+button{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	background:rgba(0,0,0,0.5);
+	color:white;
+	border:none;
+	padding:10px;
+	cursor:pointer;
+}
+.prev{
+	left:10px;
+}
+.next{
+	right:10px;
+}
+.dots{
+	margin-top:10px;
+}
+.dot{
+	height:10px;
+	width:10px;
+	margin:5px;
+	display:inline-block;
+	background:#ccc;
+	border-radius:50%;
+	cursor: pointer;
+}
+.dot.active{
+	background:#333;
+}
+.thumbnails{
+	margin-top:10px;
+}
+.thumbnails img{
+	width:80px;
+	height:50px;
+	margin:5px;
+	cursor: pointer;
+	opacity:0.6;
+}
+.thumbnails img.active{
+	border:2px solid #333;
+	opacity:1;
+}
+
+
+
+
+
+
+
