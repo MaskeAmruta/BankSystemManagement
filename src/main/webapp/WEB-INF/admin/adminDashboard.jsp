@@ -14,8 +14,6 @@
 <div class="container">
     <div class="sidebar">
         <h2>Admin</h2>
-        
-      	<a href="${pageContext.request.contextPath}/admin/openNewAccount">Open New Account</a>
         <a href="${pageContext.request.contextPath}/viewCustomer">View All Customers</a>
         <a href="${pageContext.request.contextPath}/AllRequestServlet">Approve Request</a>
         <a href="${pageContext.request.contextPath }/SearchCustomer">SearchCustomer</a>

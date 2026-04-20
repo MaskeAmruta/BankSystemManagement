@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath }/css/openAc.css">
 </head>
 <body>
+
 <h2>Open New Account</h2>
 
 <form name="acform" action="${pageContext.request.contextPath }/AddCustomerServlet" 
@@ -50,8 +51,7 @@
 	<span id="openBalError" style="color:red;"></span>
 		
 	<button type="submit" onclick="return validateForm()">Save</button>
-	<button type="button" onClick="location.href='${pageContext.request.contextPath}/AdminDashboardServlet'">Cancel</button>
-
+	<button type="button" onClick="location.href='index.jsp' ">Cancel</button>
 </form>
 
 <script>

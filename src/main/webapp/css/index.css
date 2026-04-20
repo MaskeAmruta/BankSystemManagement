@@ -27,13 +27,14 @@ span img{
 }
 
 /* Navbar container */
+
 .navbar {
-	position:fixed;
-	border-radius:100px;
+	position: fixed;
+	border-radius: 100px;
     background-color: #0a3d62;
-    padding: 10px 0;
-    width:70%;
-    margin-left:20%;
+    padding: 5px 0;
+    width: 70%;
+    margin-left: 20%;
 }
 
 /* Navbar list */
@@ -53,7 +54,8 @@ span img{
     padding: 8px 12px;
     transition: background 0.3s;
 }
-.navbar li{
+
+.navbar li {
 	cursor: pointer;
 	text-decoration: none;
     color: #ffffff;
@@ -66,40 +68,88 @@ span img{
     background-color: #1e6091;
     border-radius: 4px;
 }
-.navbar ul li{
-	position:relative;
+
+.navbar ul li {
+	position: relative;
 }
 
-/* Service submenu links */
-.submenu{
-    display: none;
-    position: absolute;
-    top: 100%;          /* directly below parent */
-    left: 0;
-    background-color: #0a3d62;
-    border-radius: 4px;
-    padding: 10px 0;
+/*---------Responsive navbar ---------*/
+@media (max-width: 600px) {
+
+    .navbar {
+        width: 95%;
+        margin-left: 2.5%;
+        border-radius: 20px;
+
+        /* 🔥 KEY FIX */
+        position: static;   /* remove fixed only on mobile */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
 }
-.submenu ul{
-	list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
-    gap: 10px;
-    margin-top:10px;
-    margin-bottom:10px;  
-}
-.submenu ul li a{
-	white-space: nowrap;
-	margin:0;
-	padding:0;
+/* Logi/* ================= FOOTER ================= */
+
+.footer {
+  background: #1e2a38;
+  color: #fff;
+  margin-top: 60px;
 }
 
-.navbar ul li:hover .submenu {
-    display: block;
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
 }
-/* Login buttons */
+
+.footer-box h3 {
+  margin-bottom: 15px;
+}
+
+.footer-box p,
+.footer-box a {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-box ul {
+  list-style: none;
+}
+
+.footer-box ul li {
+  margin-bottom: 8px;
+}
+
+.footer-box a:hover {
+  color: #00c6ff;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background: #16202a;
+  font-size: 14px;
+}
+n buttons */
 
 .open-login {
 	
@@ -118,22 +168,4 @@ span img{
     background-color: #1e6091;
     color: #ffffff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
